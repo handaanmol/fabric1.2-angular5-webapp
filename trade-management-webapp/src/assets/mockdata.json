@@ -1,0 +1,19 @@
+{
+  "responseDate": "2017-12-11T14:56:56.042Z",
+  "isSuccess": true,
+  "result": {
+    "tradeList": [{
+        "source": "wamco",
+        "IM": "WAMCO",
+        "product": "ABCD",
+        "quantity": "12"
+      },
+      {
+        "source": "wamco423",
+        "IM": "WAMSO",
+        "product": "iuysu",
+        "quantity": "20"
+      }
+    ]
+  }
+}

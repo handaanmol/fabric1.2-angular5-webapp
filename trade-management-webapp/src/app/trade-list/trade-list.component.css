@@ -1,0 +1,37 @@
+.trade-page {
+  padding: 20px;
+  margin: 30px;
+}
+
+.trade-heading {
+  color: brown;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.logout{
+  font-size: 20px;
+  color: blue;
+  font-weight: 900;
+  float: right;
+
+}

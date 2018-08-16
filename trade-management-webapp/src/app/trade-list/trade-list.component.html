@@ -1,0 +1,40 @@
+<div class="trade-page">
+  <div class="trade-heading">Trade List <button class="btn btn-primary" (click)="addTrade()">Add</button> <button class="btn btn-secondary" (click)="matchTrade()">Match</button><a href="/" class="logout"> Go Back </a></div>
+
+  <div>
+
+  </div>
+  <table>
+    <tr>
+      <th>TradeID</th>
+      <th>IM</th>
+      <th>EB</th>
+      <th>Product</th>
+      <th>Sub Product</th>
+      <th>Security</th>
+      <th>trade Date</th>
+      <th>Sette Date</th>
+      <th>Settle Location</th>
+      <th>Quantity</th>
+      <th>Allocation ID</th>
+      <th>Status</th>
+      <th>Status Desc</th>
+      
+    </tr>
+    <tr class="trade-box" *ngFor="let trade of tradeList">
+      <td>{{trade.tradeId}}</td>
+      <td>{{trade.investmentManager}}</td>
+      <td>{{trade.executingBroker}}</td>
+      <td>{{trade.product}}</td>
+      <td>{{trade.subProduct}}</td>
+      <td>{{trade.security}}</td>
+      <td>{{trade.tradeDate}}</td>
+      <td>{{trade.settleDate}}</td>
+      <td>{{trade.settleLocation}}</td>
+      <td>{{trade.quantity}}</td>
+      <td>{{trade.allocId}}</td>
+      <td>{{trade.status}}</td>
+      <td>{{trade.statusDetail}}</td>
+    </tr>
+  </table>
+</div>
