@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./trade-list.component.css']
 })
 export class TradeListComponent implements OnInit {
-  public tradeList=[];
+  public tradeList;
   public orgName;
   constructor(private tradeService: TradeService, private activatedRoute: ActivatedRoute) { }
 
@@ -20,7 +20,8 @@ export class TradeListComponent implements OnInit {
     this.tradeService.getTradeList(this.orgName).subscribe(
       (response) => {
         console.log('get trades', response);
-        this.tradeList.push(response);
+        //this.tradeList.push(response);
+        this.tradeList=response;
 
       },
       (exception) => {
@@ -29,15 +30,17 @@ export class TradeListComponent implements OnInit {
   }
 
   addTrade(){
-    this.tradeService.getTradeList(this.orgName).subscribe(
+    console.log("trade will be added by org", this.orgName)
+    this.tradeService.addTradeByOrg(this.orgName).subscribe(
       (response) => {
-        console.log('get trades', response);
+        console.log('added trades transaction Id is', response);
         this.tradeList.push(response);
-
+        
       },
       (exception) => {
         console.log('error', exception);
       });
+      this.ngOnInit();
   }
 
   matchTrade(){

@@ -7,32 +7,38 @@
   <table>
     <tr>
       <th>TradeID</th>
+      <th>Source</th>
+      <th>BuySide</th>
+      <th>BuySide TradeId</th>
+      <th>SellSide</th>
+      <th>SellSide TradeId</th>
       <th>IM</th>
       <th>EB</th>
       <th>Product</th>
-      <th>Sub Product</th>
-      <th>Security</th>
-      <th>trade Date</th>
-      <th>Sette Date</th>
-      <th>Settle Location</th>
+      <th>SubProduct</th>
+      <th>Trade Date</th>
       <th>Quantity</th>
-      <th>Allocation ID</th>
+      <th>Price</th>
+      <th>Security</th>
       <th>Status</th>
-      <th>Status Desc</th>
+
       
     </tr>
     <tr class="trade-box" *ngFor="let trade of tradeList">
       <td>{{trade.tradeId}}</td>
+      <td>{{trade.source}}</td>
+      <td>{{trade.buySide}}</td>
+      <td>{{trade.buySideTradeId}}</td>
+      <td>{{trade.sellSide}}</td>
+      <td>{{trade.sellSideTradeId}}</td>
       <td>{{trade.investmentManager}}</td>
       <td>{{trade.executingBroker}}</td>
       <td>{{trade.product}}</td>
       <td>{{trade.subProduct}}</td>
-      <td>{{trade.security}}</td>
       <td>{{trade.tradeDate}}</td>
-      <td>{{trade.settleDate}}</td>
-      <td>{{trade.settleLocation}}</td>
       <td>{{trade.quantity}}</td>
-      <td>{{trade.allocId}}</td>
+      <td>{{trade.price}}</td>
+      <td>{{trade.securityId}}</td>
       <td>{{trade.status}}</td>
       <td>{{trade.statusDetail}}</td>
     </tr>

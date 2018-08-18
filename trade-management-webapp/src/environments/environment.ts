@@ -6,5 +6,6 @@
 export const environment = {
   production: false,
   getTokenURL: 'http://localhost:4000/users',
-  getTradesURL: 'http://localhost:4000/channels/trade-instruction-channel/chaincodes/trade-instruction2'
+  getTradesURL: 'http://localhost:4000/channels/trade-instruction-channel/chaincodes/colorado5',
+  addTradeURL: 'http://localhost:4000/channels/trade-instruction-channel/chaincodes/colorado5'
 };
